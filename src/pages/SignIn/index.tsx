@@ -6,7 +6,7 @@ import {GoogleAuthProvider, signInWithPopup, User} from 'firebase/auth';
 import {auth} from '../../services/firebase';
 
 export function SignIn(){
-   const [user, setUser] = useState<User>({} as User)
+   const [user, setUser] = useState<User>({} as User);
 
 
    function handleGoogleSigIn(){
@@ -19,7 +19,7 @@ export function SignIn(){
       })
       .catch((error) => {
          console.log(error);
-      })
+      });
 
 
    }
@@ -47,5 +47,5 @@ export function SignIn(){
        </div>
      
         
-    );
+    )
 }
